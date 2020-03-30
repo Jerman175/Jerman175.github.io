@@ -33,9 +33,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
+                    </!DOCTYPE>
 
-                <a href="#home" class="navbar-brand page-scroll">Wayan Jerman</a>
+                    <a href="#home" class="navbar-brand page-scroll">Wayan Jerman</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -210,29 +210,34 @@
 
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2">
-                    <form>
+                    <form action="MAILTO:wayanjerman63@gmail.com" method="POST" enctype="text/plain">
                         <div class="form-group">
                             <label for="nama">Nama</label>
-                            <input type="text" id="nama" class="form-control" placeholder="Masukan Nama">
+                            <input type="text" id="nama" name="nama" class="form-control" placeholder="Masukan Nama">
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" class="form-control" placeholder="Masukan Email">
+                            <input type="email" id="email" name="email" class="form-control"
+                                placeholder="Masukan Email">
                         </div>
                         <div class="form-group">
                             <label for="telp">No Telepon</label>
-                            <input type="tel" id="telp" class="form-control" placeholder="Masukan Nomor Telpon">
+                            <input type="tel" id="telp" name="telp" class="form-control"
+                                placeholder="Masukan Nomor Telpon">
                         </div>
-                        <select class="form-control">
+                        <select class="form-control" name="kategori" id="kategori">
                             <option>--Pilih Kategori--</option>
                             <option>Kehidupan</option>
                             <option>Pekerjaan</option>
                         </select>
                         <div class="form-group">
                             <label for="pesan">Pesan</label>
-                            <textarea class="form-control" rows="10" placeholder="Masukan Pesan"></textarea>
+                            <textarea class="form-control" rows="10" name="pesan" id="pesan"
+                                placeholder="Masukan Pesan">
+                            </textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                        <button type="submit" value="send" class="btn btn-primary">Kirim Pesan</button>
+                        <button type="reset" value="reset" class="btn btn-danger">Reset Pesan</button>
                     </form>
                 </div>
             </div>
